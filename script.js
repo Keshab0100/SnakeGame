@@ -14,8 +14,9 @@ const gameBoard = document.getElementById("game-board");
 
 function main(currentTime) {
   if (gameover) {
-    alert("You lost");
-    window.location = "/";
+    if (confirm("You lost. Restart the game?")) {
+      window.location = "https://keshab0100.github.io/SnakeGame/";
+    }
     return;
   }
 
