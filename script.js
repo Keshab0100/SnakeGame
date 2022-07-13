@@ -15,7 +15,7 @@ const gameBoard = document.getElementById("game-board");
 function main(currentTime) {
   if (gameover) {
     alert("You lost");
-    window.open("/", "_self");
+    window.location = "/";
     return;
   }
 
